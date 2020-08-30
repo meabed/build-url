@@ -236,7 +236,7 @@ describe("buildUrl", () => {
     ).toEqual("http://example.com?foo=bar");
   });
 
-  it("should not append a queryParam if it's number", () => {
+  it("should append a queryParam if it's number", () => {
     expect(
       buildUrl("http://example.com", {
         queryParams: {
